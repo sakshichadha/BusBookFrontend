@@ -35,7 +35,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Viewbus_comp = ({ buscustomer, formData, onChange, onSubmit }) => {
+const ViewBus = ({ buscustomer, formData, onChange, onSubmit }) => {
   const { from, to, date } = formData;
   const classes = useStyles();
 
@@ -113,11 +113,11 @@ const Viewbus_comp = ({ buscustomer, formData, onChange, onSubmit }) => {
   );
 };
 
-Viewbus_comp.propTypes = {
+ViewBus.propTypes = {
   formData: PropTypes.object.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   buscustomer: PropTypes.object.isRequired,
 };
 
-export default Viewbus_comp;
+export default ViewBus;

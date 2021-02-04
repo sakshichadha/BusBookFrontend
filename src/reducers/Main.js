@@ -17,7 +17,7 @@ const initialState = {
   details_state: null,
 };
 
-function Addbus_reducer(state = initialState, action) {
+function Main(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
@@ -65,4 +65,4 @@ function Addbus_reducer(state = initialState, action) {
       return state;
   }
 }
-export default Addbus_reducer;
+export default Main;

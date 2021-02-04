@@ -65,20 +65,15 @@ export const register = ({ name, email, category, password }) => async (
 };
 //login
 export const login = (formData) => async (dispatch) => {
-  //console.log(email);
-
   const config = {
     headers: {
       "Content-Type": "application/json",
     },
   };
-  // const body = JSON.stringify({ email, category, password });
-  //console.log(email);
+
   try {
-    console.log("FISH");
     const res = await axios.post("/api/auth", formData, config);
-    console.log("HIII");
-    console.log(res);
+
     localStorage.setItem("token", res.data.token);
     dispatch({
       type: LOGIN_SUCCESS,

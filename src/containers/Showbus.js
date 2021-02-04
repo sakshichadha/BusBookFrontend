@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import Bus_item_customer from "./Bus_item_customer";
+import Bus_item_customer from "../components/busItemCustomer";
 import { viewbusc } from "../actions/viewbusc";
 
 const Showbus = ({ buscustomer }) => {

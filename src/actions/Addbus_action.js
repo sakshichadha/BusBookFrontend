@@ -15,7 +15,7 @@ export const Addbus_action = ({
       "Content-Type": "application/json",
     },
   };
-  console.log("action");
+
   const body = JSON.stringify({ bus_id, from, to, start_time, end_time, date });
   try {
     const res = await axios.post("/api/users/addbus", body, config);
@@ -25,7 +25,7 @@ export const Addbus_action = ({
       payload: res.data,
     });
   } catch (err) {
-    // const errors = err.responsebuses
+  
     dispatch({
       type: BUS_ERROR,
     });

@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getbuses } from "../../actions/getbuses";
-import BusItem from "./BusItem";
+import BusItem from "../../components/BusItem";
 const Buses = ({ buses, getbuses }) => {
   useEffect(() => {
     getbuses();

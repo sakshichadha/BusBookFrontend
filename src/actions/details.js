@@ -3,7 +3,6 @@ import axios from "axios";
 import { SEAT_DETAILS, BUS_ERROR } from "./types";
 export const details = (seatNumber, busId) => async (dispatch) => {
   {
-    console.log(busId);
   }
   const config = {
     headers: {
@@ -12,8 +11,7 @@ export const details = (seatNumber, busId) => async (dispatch) => {
   };
   try {
     const body = { seatNumber: seatNumber, busId: busId };
-    console.log(body);
-    console.log("details action");
+
     const res = await axios.post("/api/users/details", body, config);
 
     dispatch({

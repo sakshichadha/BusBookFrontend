@@ -1,15 +1,16 @@
 import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import View from "../../containers/Viewbuses_cus";
+import ViewBus from "../../containers/ViewBusesCustomer";
 import image2 from "../../img/add4.png";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import PersonIcon from "@material-ui/icons/Person";
-
+import viewBus from "../ViewBus";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
+import { Redirect } from "react-router-dom";
 
 import Typography from "@material-ui/core/Typography";
 
@@ -84,7 +85,8 @@ const Dashboard = ({ category }) => {
   } else {
     return (
       <Fragment>
-        {" "}
+        {}
+        <ViewBus />
         <Fragment>
           <br />
           <br />

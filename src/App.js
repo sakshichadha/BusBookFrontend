@@ -1,22 +1,22 @@
 import React, { Fragment, useEffect } from "react";
-import NavBar from "./containers/layout/Navbar";
-import Landing from "./containers/layout/Landing";
+import NavBar from "./components/layout/Navbar";
+import Landing from "./components/layout/Landing";
 import { Provider } from "react-redux";
 import { loadUser } from "./actions/auth";
 import Register from "./containers/auth/Register";
 import Login from "./containers/auth/Login";
 import Alert from "./containers/alert";
 import Dashboard from "./containers/dashboard/dashboard";
-import Viewbuses_cus from "./containers/Viewbuses_cus";
-import Addbus from "./containers/Addbus";
+import Viewbuses_cus from "./containers/ViewBusesCustomer";
+import Addbus from "./containers/AddBus";
 import Showbus from "./containers/Showbus";
 import store from "./store";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Buses from "./containers/buses/Buses";
-import Tickets from "./containers/Ticket/Tickets";
+
 import Bus from "./containers/Bus";
 // import ResetBus from "./containers/ResetBus";
-import Seats from "./containers/ViewSeats";
+import Seats from "./components/ViewSeats";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import "./App.css";
 const App = () => {

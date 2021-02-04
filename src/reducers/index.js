@@ -1,5 +1,5 @@
 import auth from "./auth";
-import Addbus_reducer from "./Addbus_reducer";
+import Addbus_reducer from "./Main";
 import getbuses from "./getbuses";
 import { combineReducers } from "redux";
 import alert from "./alert";

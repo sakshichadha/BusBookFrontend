@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Addbus_action } from "../actions/Addbus_action";
 
-import Addbus_comp from "../components/Addbus_comp";
+import Addbus_comp from "../components/AddBus";
 
 const Addbus = ({ Addbus_action, isAuthenticated }) => {
   console.log("entering");

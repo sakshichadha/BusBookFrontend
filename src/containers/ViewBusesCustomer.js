@@ -4,9 +4,8 @@ import { Link, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { viewbusc } from "../actions/viewbusc";
-import Viewbus_comp from "../components/Viewbus_comp";
-
-const Viewbuses_cus = ({ viewbusc, buscustomer }) => {
+import ViewBus from "../components/ViewBus";
+const ViewBusesCustomer = ({ viewbusc, buscustomer }) => {
   console.log("entering the viewbusc container");
   const [formData, setFormData] = useState({
     from: "",
@@ -38,7 +37,7 @@ const Viewbuses_cus = ({ viewbusc, buscustomer }) => {
   };
 
   return (
-    <Viewbus_comp
+    <ViewBus
       buscustomer={buscustomer}
       formData={formData}
       onChange={onChange}
@@ -46,11 +45,11 @@ const Viewbuses_cus = ({ viewbusc, buscustomer }) => {
     />
   );
 };
-Viewbuses_cus.propTypes = {
+ViewBusesCustomer.propTypes = {
   viewbusc: PropTypes.func.isRequired,
   buscustomer: PropTypes.object.isRequired,
 };
 const mapStateToProps = (state) => ({
   buscustomer: state.Addbus_reducer.buscustomer,
 });
-export default connect(mapStateToProps, { viewbusc })(Viewbuses_cus);
+export default connect(mapStateToProps, { viewbusc })(ViewBusesCustomer);

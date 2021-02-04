@@ -2,23 +2,15 @@ import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import ViewSeats from "./ViewSeats";
+import ViewSeats from "../components/ViewSeats";
 import { getBusById } from "../actions/getBusById";
 import { resetbus } from "../actions/resetbus";
 import { logout } from "../actions/auth";
 import DetailsIcon from "@material-ui/icons/Details";
 import SearchIcon from "@material-ui/icons/Search";
 import RefreshIcon from "@material-ui/icons/Refresh";
-import EventSeatIcon from "@material-ui/icons/EventSeat";
-
-import image from "../img/add2.png";
-import image2 from "../img/add3.png";
-import "./model.css";
-import HelpIcon from "@material-ui/icons/Help";
+import "../components/model.css";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 

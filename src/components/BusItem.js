@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
 
 import React, { Fragment } from "react";
-import img from "../../img/greyImage.jpg";
+import img from "../img/greyImage.jpg";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
